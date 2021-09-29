@@ -90,11 +90,11 @@ Donec euismod dui volutpat magna malesuada eleifend. Vivamus porta venenatis odi
 
         string imagepath = HttpContext.Current.Server.MapPath("/image");
         pdf.dresimekle(tablo, imagepath + "/meb-logo.png", 5f, PdfPCell.ALIGN_LEFT, 70, 70, 5);
-        pdf.hucreEkle(tablo, "T.C.", metinhiza: "C", fonttip: "B");
-        pdf.hucreEkle(tablo, "MİLLİ EĞİTİM BAKANLIĞI", metinhiza: "C", fonttip: "B");
-        pdf.hucreEkle(tablo, "Ölçme,Değerlendirme ve Sınav Hizmetleri Genel Müdürlüğü", metinhiza: "C", fonttip: "B");
-        pdf.hucreEkle(tablo, "Ölçme,Değerlendirme ve Yerleştirme Hizmetleri Daire Başkanlığı", metinhiza: "C", fonttip: "B");
-        pdf.hucreEkle(tablo, "Masa Ekibi Tespit Tutanağı", metinhiza: "C",  fonttip: "B");
+        pdf.hucreEkle(tablo, "X.X.", metinhiza: "C", fonttip: "B");
+        pdf.hucreEkle(tablo, "X X X", metinhiza: "C", fonttip: "B");
+        pdf.hucreEkle(tablo, "....", metinhiza: "C", fonttip: "B");
+        pdf.hucreEkle(tablo, "................", metinhiza: "C", fonttip: "B");
+        pdf.hucreEkle(tablo, "Okey Ekibi Tespit Tutanağı", metinhiza: "C",  fonttip: "B");
 
         
 
@@ -121,7 +121,7 @@ Donec euismod dui volutpat magna malesuada eleifend. Vivamus porta venenatis odi
         pdf.hucreEkle(tablo, belgeBilgi.sayfaNo,  renk: 5);
         
         pdf.hucreEkle(tablo, "TUTANAKTIR ", metinhiza: "C", fontboyut: 14, fonttip: "B",kolonsayisi:5,satiryukseklik:22);
-        pdf.hucreEkle(tablo, "Sınav Adı ve Tarihi : ", metinhiza: "L", fontboyut: 12, fonttip: "BU");
+        pdf.hucreEkle(tablo, "... Adı ve Tarihi : ", metinhiza: "L", fontboyut: 12, fonttip: "BU");
         pdf.hucreEkle(tablo, belgeBilgi.sinavAdi + " " + belgeBilgi.sinavTarihi, metinhiza: "L", fontboyut: 12, kolonsayisi: 4);
 
 
