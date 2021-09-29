@@ -75,9 +75,9 @@ public partial class Default2 : System.Web.UI.Page
         pdf.PDFTableOlustur(doc, tabloA, genislika, ToplamGenislik: 250);
         for (int i = 1; i <= 10; i++)
         {
-            pdf.dteksatir(tabloA, i + ". Satır", satiryukseklik: 12, metinhiza: "C", fontboyut: 7, kutu: i == 1 ? "U1" : "O1");
-            pdf.dteksatir(tabloA, ":", satiryukseklik: 12, metinhiza: "C", fontboyut: 7, kutu: i == 1 ? "U" : "O");
-            pdf.dteksatir(tabloA, i + ". Satır İçerik", satiryukseklik: 12, metinhiza: "L", fontboyut: 7, kutu: i == 1 ? "U" : "O");
+            pdf.hucreEkle(tabloA, i + ". Satır", satiryukseklik: 12, metinhiza: "C", fontboyut: 7, kutu: i == 1 ? "U1" : "O1");
+            pdf.hucreEkle(tabloA, ":", satiryukseklik: 12, metinhiza: "C", fontboyut: 7, kutu: i == 1 ? "U" : "O");
+            pdf.hucreEkle(tabloA, i + ". Satır İçerik", satiryukseklik: 12, metinhiza: "L", fontboyut: 7, kutu: i == 1 ? "U" : "O");
         }
         return tabloA;
     }
@@ -88,9 +88,9 @@ public partial class Default2 : System.Web.UI.Page
         pdf.PDFTableOlustur(doc, tabloA, genislika, ToplamGenislik: 250);
         for (int i = 1; i <= 10; i++)
         {
-            pdf.dteksatir(tabloA, i + ". Satır", satiryukseklik: 12, metinhiza: "C", fontboyut: 7);
-            pdf.dteksatir(tabloA, ":", satiryukseklik: 12, metinhiza: "C", fontboyut: 7);
-            pdf.dteksatir(tabloA, i + ". Satır İçerik", satiryukseklik: 12, metinhiza: "L", fontboyut: 7);
+            pdf.hucreEkle(tabloA, i + ". Satır", satiryukseklik: 12, metinhiza: "C", fontboyut: 7);
+            pdf.hucreEkle(tabloA, ":", satiryukseklik: 12, metinhiza: "C", fontboyut: 7);
+            pdf.hucreEkle(tabloA, i + ". Satır İçerik", satiryukseklik: 12, metinhiza: "L", fontboyut: 7);
         }
         return tabloA;
     }
@@ -106,9 +106,9 @@ public partial class Default2 : System.Web.UI.Page
             for (int y = 1; y <= 10; y++)
             {
                 if (x == 1)
-                    pdf.dteksatir(tabloA, x + "-" + y, satiryukseklik: 12, metinhiza: "C", fontboyut: 7, kutu: y == 1 ? "U1" : "U");
+                    pdf.hucreEkle(tabloA, x + "-" + y, satiryukseklik: 12, metinhiza: "C", fontboyut: 7, kutu: y == 1 ? "U1" : "U");
                 else
-                    pdf.dteksatir(tabloA, x + "-" + y, satiryukseklik: 12, metinhiza: "C", fontboyut: 7, kutu: y == 1 ? "O1" : "O");
+                    pdf.hucreEkle(tabloA, x + "-" + y, satiryukseklik: 12, metinhiza: "C", fontboyut: 7, kutu: y == 1 ? "O1" : "O");
             }
 
 
